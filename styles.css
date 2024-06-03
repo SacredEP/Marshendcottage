@@ -3,53 +3,80 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: #f4f4f4;
 }
+
 header {
     background: #4CAF50;
     color: white;
     padding: 1em 0;
     text-align: center;
 }
+
 nav ul {
     list-style: none;
     padding: 0;
+    text-align: center;
 }
+
 nav ul li {
     display: inline;
     margin: 0 1em;
 }
+
 nav ul li a {
     color: white;
     text-decoration: none;
 }
-section {
+
+main {
     padding: 2em;
-    margin: 2em 0;
 }
-footer {
-    background: #333;
-    color: white;
-    text-align: center;
-    padding: 1em 0;
-}
-form {
+
+#supplements {
     display: flex;
-    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
-form label {
-    margin: 0.5em 0 0.2em;
+
+.supplement {
+    background: white;
+    padding: 1em;
+    margin: 1em;
+    border: 1px solid #ddd;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    text-align: center;
 }
-form input, form textarea {
-    padding: 0.5em;
-    margin-bottom: 1em;
+
+.supplement img {
+    max-width: 100%;
+    height: auto;
 }
-form button {
+
+.supplement h3 {
+    margin-top: 0.5em;
+}
+
+.supplement p {
+    text-align: left;
+}
+
+button {
     padding: 0.7em;
     background: #4CAF50;
     color: white;
     border: none;
     cursor: pointer;
 }
-form button:hover {
+
+button:hover {
     background: #45a049;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
 }
